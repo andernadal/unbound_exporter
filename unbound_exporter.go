@@ -70,13 +70,13 @@ var (
 			"Total number of queries that were successfully answered using a cache lookup.",
 			prometheus.CounterValue,
 			[]string{"thread"},
-			"^thread(\\d+)\\.num\\.cachehits$"),
+			"^total(\\d+)\\.num\\.cachehits$"),
 		newUnboundMetric(
 			"cache_misses_total",
 			"Total number of cache queries that needed recursive processing.",
 			prometheus.CounterValue,
 			[]string{"thread"},
-			"^thread(\\d+)\\.num\\.cachemiss$"),
+			"^total(\\d+)\\.num\\.cachemiss$"),
 		newUnboundMetric(
 			"memory_caches_bytes",
 			"Memory in bytes in use by caches.",
@@ -100,7 +100,7 @@ var (
 			"Total number of cache prefetches performed.",
 			prometheus.CounterValue,
 			[]string{"thread"},
-			"^thread(\\d+)\\.num\\.prefetch$"),
+			"^total(\\d+)\\.num\\.prefetch$"),
 		newUnboundMetric(
 			"queries_total",
 			"Total number of queries received.",
